@@ -1,8 +1,12 @@
-/*
+#slyde-button {
+    width: 50px;
+    color: #cccccc;
+    padding: 0;
+    margin-left: 8px;
+    transition: color 0.2s ease;
+    cursor: pointer !important;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
-
-If your plugin does not need CSS, delete this file.
-
-*/
+#slyde-button:hover {
+    color: #ffffff;
+}
