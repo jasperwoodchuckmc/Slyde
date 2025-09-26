@@ -11,6 +11,8 @@ export class SettingTab extends PluginSettingTab {
 
     display(): void {
         const { containerEl } = this;
+        const slider = this.plugin.getSlider();
+        const button = this.plugin.getButton();
         containerEl.empty();
 
         new Setting(containerEl)
@@ -28,6 +30,8 @@ export class SettingTab extends PluginSettingTab {
                     this.plugin.settings.defaultWidth = value;
                     this.plugin.updateEditorWidth(value);
                     this.plugin.saveSettings();
+                    slider.value = String(value);
+                    button.textContent = `${value}px`;
                 });
             });
 

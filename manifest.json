@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-slyde",
 	"name": "Slyde",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Control the readable line length in Obsidian",
 	"author": "Obsidian",
