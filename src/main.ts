@@ -40,7 +40,6 @@ export default class Slyde extends Plugin {
 		this.updateEditorWidth(this.settings.currentWidth);
 
 		this.app.workspace.onLayoutReady(() => {
-
 			const content = this.getContent();
 
 			this.addSliderToStatusBar();
